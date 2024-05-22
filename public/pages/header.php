@@ -1,3 +1,9 @@
+<?php
+/**
+ * The header. Should be included in each file
+ */
+?>
+
 <!doctype html>
 <html>
 <head>

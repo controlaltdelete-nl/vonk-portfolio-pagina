@@ -1,4 +1,7 @@
 <?php
+/**
+ * Main router file.
+ */
 
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../connect-database.php';

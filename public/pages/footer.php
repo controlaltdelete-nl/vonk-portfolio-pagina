@@ -1,3 +1,9 @@
+<?php
+/**
+ * The footer. Should be included in each file
+ */
+?>
+
 <div class="mx-auto max-w-screen-lg px-3 py-6">
         <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div class="sm:w-7/12">

@@ -1,4 +1,4 @@
-<?php require(__DIR__ . '/header.php'); ?>
+<?php require __DIR__ . '/header.php'; ?>
 
     <div class="mx-auto max-w-screen-lg px-3 py-6">
         <div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
@@ -157,4 +157,4 @@
             </a></div>
     </div>
 
-<?php require(__DIR__ . '/footer.php'); ?>
+<?php require __DIR__ . '/footer.php'; ?>
