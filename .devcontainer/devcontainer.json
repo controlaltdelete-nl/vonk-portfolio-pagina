@@ -6,5 +6,6 @@
     },
     "forwardPorts": [8000],
     "postCreateCommand": "bash .devcontainer/start-container.sh",
-    "postStartCommand": "php -S 0.0.0.0:8000 public/index.php"
+    "postStartCommand": "php -S 0.0.0.0:8000 public/index.php",
+    "dockerComposeFile": ["docker-compose.yml"]
 }
