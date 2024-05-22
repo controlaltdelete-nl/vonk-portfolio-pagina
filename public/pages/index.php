@@ -155,43 +155,7 @@ require __DIR__ . '/header.php';
                     </div>
                 </a>
             <?php endwhile; ?>
-            <a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/sixth-post">
-                <div class="overflow-hidden rounded-md bg-slate-800">
-                    <div class="aspect-w-3 aspect-h-2"></div>
-                    <div class="px-3 pt-4 pb-6 text-center"><h2 class="text-xl font-semibold">Typography example</h2>
-                        <div class="mt-1 text-xs text-gray-400">Feb 6, 2020</div>
-                        <div class="mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero
-                            esse non molestias eos excepturi.
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/fifth-post">
-                <div class="overflow-hidden rounded-md bg-slate-800">
-                    <div class="aspect-w-3 aspect-h-2"></div>
-                    <div class="px-3 pt-4 pb-6 text-center"><h2 class="text-xl font-semibold">5th Lorem ipsum dolor
-                            sit</h2>
-                        <div class="mt-1 text-xs text-gray-400">Feb 5, 2020</div>
-                        <div class="mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero
-                            esse non molestias eos excepturi.
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/forth-post">
-                <div class="overflow-hidden rounded-md bg-slate-800">
-                    <div class="aspect-w-3 aspect-h-2"></div>
-                    <div class="px-3 pt-4 pb-6 text-center"><h2 class="text-xl font-semibold">4th Lorem ipsum dolor
-                            sit</h2>
-                        <div class="mt-1 text-xs text-gray-400">Feb 4, 2020</div>
-                        <div class="mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero
-                            esse non molestias eos excepturi.
-                        </div>
-                    </div>
-                </div>
-            </a></div>
+        </div>
     </div>
 
 <?php require __DIR__ . '/footer.php'; ?>
