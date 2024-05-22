@@ -12,5 +12,7 @@
             "email": "info@controlaltdelete.nl"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpstan/phpstan": "^1.11"
+    }
 }
