@@ -2,7 +2,7 @@ name: HTML Lint
 on: [push]
 
 jobs:
-  hello-world:
+  html-lint:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code

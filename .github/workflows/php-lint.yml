@@ -2,12 +2,21 @@ name: Lint PHP
 on: [push]
 
 jobs:
-  hello-world:
+  php-lint:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Lint PHP
-        uses: norseblue/lint-php@v1
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
         with:
-          paths: 'public/*.php'
+          php-version: "7.4"
+          coverage: none
+          tools: phpcs
+
+      - name: Run linters
+        uses: wearerequired/lint-action@v2
+        with:
+          php_codesniffer: true
+          # Optional: Ignore warnings
+          php_codesniffer_args: "-n"
