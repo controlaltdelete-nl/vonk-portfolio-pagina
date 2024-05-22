@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Lint HTML
-        uses: yeliben/code-linter-action@v1.0.0
+      - name: HTML5Validator
+        uses: Cyb3r-Jak3/html5validator-action
         with:
-          files: 'public/*.php'
+          root: public/
+          blacklist: invalid
