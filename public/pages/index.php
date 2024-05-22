@@ -9,6 +9,8 @@
  * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
 /**
+ * Retrieve all posts
+ * 
  * @return SQLite3Result
  */
 function posts():  SQLite3Result

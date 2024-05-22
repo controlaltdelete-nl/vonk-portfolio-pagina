@@ -9,6 +9,8 @@
  * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
 /**
+ * Connect to the database
+ * 
  * @return SQLite3
  */
 function db(): SQLite3
