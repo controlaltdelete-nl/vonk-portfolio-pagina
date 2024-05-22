@@ -8,8 +8,8 @@
  * @license  Beerware https://en.wikipedia.org/wiki/Beerware
  * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
-
-function db(): SQLite3 {
+function db(): SQLite3
+{
     static $db;
 
     if (!$db) {

@@ -8,8 +8,8 @@
  * @license  Beerware https://en.wikipedia.org/wiki/Beerware
  * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
-
-function posts() {
+function posts():  SQLite3Result
+{
     return db()->query("SELECT * FROM posts");
 }
 
