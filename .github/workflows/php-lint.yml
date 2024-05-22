@@ -19,4 +19,4 @@ jobs:
         with:
           php_codesniffer: true
           # Optional: Ignore warnings
-          php_codesniffer_args: "-n"
+          php_codesniffer_args: "-n -p"
