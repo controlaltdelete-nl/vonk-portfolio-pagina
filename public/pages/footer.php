@@ -3,10 +3,10 @@
  * Footer. Should be included in every file
  * 
  * @category PHP
- * @package  controlaltdelete/vonk-portolio-pagina
- * @author   Michiel Gerritsen <info@controlaltdelete.nl
- * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
+ * @package  controlaltdelete_vonk-portolio-pagina
+ * @author   Michiel Gerritsen <info@controlaltdelete.nl>
  * @license  Beerware
+ * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
 ?>
 

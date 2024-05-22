@@ -3,22 +3,27 @@
  * Connect to the database
  * 
  * @category PHP
- * @package  controlaltdelete/vonk-portolio-pagina
- * @author   Michiel Gerritsen <info@controlaltdelete.nl
- * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
+ * @package  controlaltdelete_vonk-portolio-pagina
+ * @author   Michiel Gerritsen <info@controlaltdelete.nl>
  * @license  Beerware
+ * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
 
-$host = '127.0.0.1';
-$db   = 'test';
-$user = 'root';
-$pass = '';
-$charset = 'utf8mb4';
+// Specify the path to the SQLite database file
+$db = new SQLite3('storage/database.db');
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
-];
-$pdo = new PDO($dsn, $user, $pass, $options);
+// Prepare an insert statement
+$stmt = $db->prepare('INSERT INTO users (name, email) VALUES (:name, :email)');
+
+// Bind values to the statement
+$stmt->bindValue(':name', 'John Doe', SQLITE3_TEXT);
+$stmt->bindValue(':email', 'john.doe@example.com', SQLITE3_TEXT);
+
+// Execute the statement
+$result = $stmt->execute();
+
+if ($result) {
+    echo "Record inserted successfully.";
+} else {
+    echo "Failed to insert record.";
+}
