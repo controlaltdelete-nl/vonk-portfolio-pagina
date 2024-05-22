@@ -1,0 +1,13 @@
+name: Lint PHP
+on: [push]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Lint PHP
+        uses: norseblue/lint-php@v1
+        with:
+          paths: 'public/*.php'
