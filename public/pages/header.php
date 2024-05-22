@@ -3,9 +3,9 @@
  * Header file, should be included in every file.
  * 
  * @category PHP
- * @package  controlaltdelete_vonk-portolio-pagina
+ * @package  ControlAltDelete_VonkPortolioPagina
  * @author   Michiel Gerritsen <info@controlaltdelete.nl>
- * @license  Beerware
+ * @license  Beerware https://en.wikipedia.org/wiki/Beerware
  * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
 ?>
