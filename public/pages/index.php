@@ -143,7 +143,7 @@ require __DIR__ . '/header.php';
                     <div class="overflow-hidden rounded-md bg-slate-800">
                         <div class="aspect-w-3 aspect-h-2"></div>
                         <div class="px-3 pt-4 pb-6 text-center"><h2 class="text-xl font-semibold"><?php echo $post['title']; ?></h2>
-                            <div class="mt-1 text-xs text-gray-400">Feb 6, 2020</div>
+                            <div class="mt-1 text-xs text-gray-400"><?php echo $post['date']; ?></div>
                             <div class="mt-2 text-sm"><?php echo $post['description']; ?>
                             </div>
                         </div>
