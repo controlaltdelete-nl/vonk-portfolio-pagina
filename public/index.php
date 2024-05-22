@@ -1,5 +1,8 @@
 <?php
 
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../connect-database.php';
+
 if (!array_key_exists('REQUEST_URI', $_SERVER)) {
     throw new \Exception('No request uri found, is this CLI?');
 }
