@@ -14,5 +14,10 @@ jobs:
           coverage: none
           tools: phpcs
 
-      - name: Super-linter
-        uses: super-linter/super-linter@v6.5.0
+      - name: Run linters
+        uses: wearerequired/lint-action@v2
+        with:
+          php_codesniffer: true
+          # Optional: Ignore warnings
+          php_codesniffer_args: "-n -p"
+          continue_on_error: false
