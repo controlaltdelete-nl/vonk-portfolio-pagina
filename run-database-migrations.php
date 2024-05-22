@@ -8,7 +8,6 @@
  * @license  Beerware https://en.wikipedia.org/wiki/Beerware
  * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
-
 require 'connect-database.php';
 
 $tableExists = db()->querySingle("SELECT name FROM sqlite_master WHERE type='table' AND name='posts'");
@@ -18,12 +17,14 @@ if ($tableExists) {
     return;
 }
 
-db()->exec("CREATE TABLE IF NOT EXISTS posts (
+db()->exec(
+    "CREATE TABLE IF NOT EXISTS posts (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
     description TEXT NOT NULL,
     date TEXT NOT NULL
-)");
+    )"
+);
 
 echo 'Table created' . PHP_EOL;
 
