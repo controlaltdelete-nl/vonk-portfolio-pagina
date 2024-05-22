@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: HTML5Validator
-        uses: Cyb3r-Jak3/html5validator-action
+        uses: Cyb3r-Jak3/html5validator-action@v7
         with:
           root: public/
           blacklist: invalid
