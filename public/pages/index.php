@@ -1,10 +1,12 @@
 <?php 
 /**
+ * Index page
+ * 
  * @category PHP
- * @package Control Alt Delete Vonk Portolio Pagina
- * @link https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
- * @author Michiel Gerritsen
- * @license Beerware
+ * @package  controlaltdelete/vonk-portolio-pagina
+ * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
+ * @author   Michiel Gerritsen
+ * @license  Beerware
  */
 
 require __DIR__ . '/header.php'; 
