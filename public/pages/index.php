@@ -9,6 +9,10 @@
  * @link     https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
  */
 
+function posts() {
+    return db()->query("SELECT * FROM posts");
+}
+
 require __DIR__ . '/header.php'; 
 ?>
 
@@ -133,8 +137,20 @@ require __DIR__ . '/header.php';
                 <div class="text-sm"><a href="/demo/astro-boilerplate/posts">View all Posts →</a></div>
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-3"><a class="hover:translate-y-1"
-                                                              href="/demo/astro-boilerplate/posts/sixth-post">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <?php $posts = posts(); while ($post = $posts->fetchArray(SQLITE3_ASSOC)): ?>
+                <a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/sixth-post">
+                    <div class="overflow-hidden rounded-md bg-slate-800">
+                        <div class="aspect-w-3 aspect-h-2"></div>
+                        <div class="px-3 pt-4 pb-6 text-center"><h2 class="text-xl font-semibold"><?php echo $post['title']; ?></h2>
+                            <div class="mt-1 text-xs text-gray-400">Feb 6, 2020</div>
+                            <div class="mt-2 text-sm"><?php echo $post['description']; ?>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <?php endwhile; ?>
+            <a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/sixth-post">
                 <div class="overflow-hidden rounded-md bg-slate-800">
                     <div class="aspect-w-3 aspect-h-2"></div>
                     <div class="px-3 pt-4 pb-6 text-center"><h2 class="text-xl font-semibold">Typography example</h2>
@@ -144,7 +160,9 @@ require __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-            </a><a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/fifth-post">
+            </a>
+            
+            <a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/fifth-post">
                 <div class="overflow-hidden rounded-md bg-slate-800">
                     <div class="aspect-w-3 aspect-h-2"></div>
                     <div class="px-3 pt-4 pb-6 text-center"><h2 class="text-xl font-semibold">5th Lorem ipsum dolor
@@ -155,7 +173,9 @@ require __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-            </a><a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/forth-post">
+            </a>
+            
+            <a class="hover:translate-y-1" href="/demo/astro-boilerplate/posts/forth-post">
                 <div class="overflow-hidden rounded-md bg-slate-800">
                     <div class="aspect-w-3 aspect-h-2"></div>
                     <div class="px-3 pt-4 pb-6 text-center"><h2 class="text-xl font-semibold">4th Lorem ipsum dolor

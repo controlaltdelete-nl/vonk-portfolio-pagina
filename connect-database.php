@@ -14,7 +14,7 @@ function db(): SQLite3 {
 
     if (!$db) {
         // Specify the path to the SQLite database file
-        $db = new SQLite3('storage/database.db');
+        $db = new SQLite3('storage/database.sqlite');
     }
 
     return $db;
