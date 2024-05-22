@@ -1,0 +1,16 @@
+{
+    "name": "controlaltdelete/vonk-portolio-pagina",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Controlaltdelete\\VonkPortolioPagina\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michiel Gerritsen",
+            "email": "info@controlaltdelete.nl"
+        }
+    ],
+    "require": {}
+}
