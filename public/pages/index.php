@@ -1,4 +1,14 @@
-<?php require __DIR__ . '/header.php'; ?>
+<?php 
+/**
+ * @category PHP
+ * @package Control Alt Delete Vonk Portolio Pagina
+ * @link https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
+ * @author Michiel Gerritsen
+ * @license Beerware
+ */
+
+require __DIR__ . '/header.php'; 
+?>
 
     <div class="mx-auto max-w-screen-lg px-3 py-6">
         <div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">

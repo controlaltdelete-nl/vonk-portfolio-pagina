@@ -1,6 +1,12 @@
 <?php
 /**
  * Connect to the database
+ * 
+ * @category PHP
+ * @package Control Alt Delete Vonk Portolio Pagina
+ * @link https://github.com/controlaltdelete-nl/vonk-portfolio-pagina
+ * @author Michiel Gerritsen
+ * @license Beerware
  */
 
 $host = '127.0.0.1';
